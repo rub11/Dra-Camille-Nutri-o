@@ -22,7 +22,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.756);
+    background-color: rgba(158, 222, 98, 0.756);
     border-bottom: 1px solid rgba(2, 91, 4, 0.471);
 
 }
@@ -44,7 +44,7 @@ img {
     width: 100%;
     border: 1px solid rgba(41, 41, 41, 0.296);
     border-radius: 2vh;
-margin-top: 20px;
+    margin-top: 20px;
 }
 
 h1 {
@@ -76,7 +76,7 @@ h1 {
 .div-borda {
     display: flex;
     justify-content: center;
-   
+
     background-image: url(Imagens/img-05.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -88,7 +88,7 @@ span {
     padding: 5px;
     border-radius: 2vh;
     color: white;
-  
+
 }
 
 .carousel {
@@ -121,35 +121,25 @@ span {
 .carousel-button {
     background: none;
     border: none;
-    background:url(Imagens/img-05.jpeg);
+    background: url(Imagens/img-05.jpeg);
     border-radius: 50%;
-    height: 60px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
+    width: 50px;
     margin-top: 250px;
     border: 1px solid rgba(60, 59, 59, 0.304);
     cursor: pointer;
-    padding: 10px;
     color: white;
-    font-size: 2em;
-   border: 2px solid white;
-
-}
-.carousel-button:hover{
-   color: greenyellow;
-   transition: 0.8s;
-}
-
-.prev {
-    left: 5px;
-    /* Ajuste conforme necessário */
+  
+    border: 2px solid white;
 
 }
 
-.next {
-    margin-left: -10px;
+.carousel-button:hover {
+    color: greenyellow;
+    transition: 0.8s;
 }
 
 .h1-nome {
@@ -159,40 +149,15 @@ span {
 }
 
 .title {
-    display: inline-block;
-    border-right: 1px solid;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 4s steps(16) backwards, blink 5s step-end infinite;
-    font-size: 1.5em;
-    /* Ajuste conforme necessário */
-    margin: auto;
-    display: flex;
-    background-color: rgba(67, 217, 43, 0.414);
-    padding: 10px;
-    border: 1px slid rgb(23, 90, 23);
-    border-radius: 2vh;
-    max-width: 250px;
+    text-align: center;
+    max-width: 300px;
+    font-size: 1.2em;
     margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 2vh;
+    background-color: green;
 }
 
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 15ch;
-        /* Quantidade de caracteres, ajuste conforme necessário */
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
 
 
 .centro {
@@ -226,15 +191,15 @@ span {
 
 .text-one {
     background-color: white;
-    max-width:60%;
+    max-width: 60%;
     margin: auto;
-    padding:10px;
+    padding: 10px;
     border-radius: 1vh;
     border: 1px solid rgba(128, 128, 128, 0.507);
 }
 
 
-.fundo{
+.fundo {
     margin: 10px auto;
     display: flex;
     background: url(Imagens/img-11.jpeg);
@@ -244,7 +209,7 @@ span {
     border: 1px solid rgba(128, 128, 128, 0.704);
 }
 
-.first{
+.first {
     width: 200px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.405);
@@ -297,7 +262,7 @@ span {
         border: 1px solid rgba(128, 128, 128, 0.704);
     }
 
-    .fundo{
+    .fundo {
         margin: 10px auto;
         display: flex;
         background: url(Imagens/img-12.jpeg);
@@ -309,19 +274,19 @@ span {
 
     .text-one {
         background-color: white;
-        max-width:80%;
+        max-width: 80%;
         margin: auto;
-        padding:10px;
+        padding: 10px;
         border-radius: 1vh;
         border: 1px solid rgba(128, 128, 128, 0.507);
     }
-    
+
 
 
     .carousel-button {
         background: none;
         border: none;
-        background:url(Imagens/img-05.jpeg);
+        background: url(Imagens/img-05.jpeg);
         border-radius: 50%;
         height: 40px;
         display: flex;
@@ -333,14 +298,17 @@ span {
         cursor: pointer;
         padding: 10px;
         color: white;
-       font-size: small;
-       border: 2px solid white;
-    
+        font-size: small;
+        border: 2px solid white;
+        margin-bottom: 2px;
+        margin:250px -18px;
     }
-    .carousel-button:hover{
-       color: greenyellow;
-       transition: 0.8s;
+
+    .carousel-button:hover {
+        color: greenyellow;
+        transition: 0.8s;
+        border: 1px solid greenyellow;
     }
-    
+
 
 }

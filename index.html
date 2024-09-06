@@ -152,19 +152,6 @@
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   <script>
     function moveCarousel(direction) {
       const carousel = document.querySelector('.carousel-items');
@@ -172,19 +159,7 @@
       carousel.scrollBy({ left: itemWidth * direction, behavior: 'smooth' });
     }
 
-    const title = document.querySelector('.title');
-    const text = 'Nosso diferencial';
-    let index = 0;
-
-    function type() {
-      if (index < text.length) {
-        title.innerHTML += text.charAt(index);
-        index++;
-        setTimeout(type, 100); // Ajuste a velocidade da digitação
-      }
-    }
-
-    type();
+   
 
   </script>
 
