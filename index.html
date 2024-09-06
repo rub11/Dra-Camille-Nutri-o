@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pag01</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+
+
+
+  <div class="container">
+    <h1 class="h1-nome">
+      Dra Camille
+    </h1>
+    <ul>
+      <li class="link">
+        Horarios
+      </li>
+      <li class="link">
+        Contato
+      </li>
+      <li class="link">
+        Sobre
+      </li>
+    </ul>
+  </div>
+
+  <div class="header">
+
+    <div class="div-img-foto">
+
+      <img class="first" src="Imagens/img-01.jpeg" alt="foto-da-camille">
+
+      <p class="text-one">
+        Olá, sou a Camille da Silva, tenho 23 anos e sou formada em Nutrição. Com anos de
+        experiência atuando em ONGs, hospitais e grandes redes de mercado, desenvolvi uma abordagem
+        única, focada em resultados reais e personalizados. Meu trabalho é guiado pela atenção aos
+        detalhes, algo que meus mais de 50 mil seguidores reconhecem e valorizam.</p>
+      <p class="text-one">Ao longo da minha trajetória, acompanhei centenas de pessoas alcançando
+        suas metas e mudando de vida. Cada consulta é uma oportunidade de aplicar tudo que aprendi
+        ao longo dos anos, ajustando cada orientação para o que você realmente precisa. Não existe
+        fórmula mágica, mas com a minha experiência, eu posso te guiar pelo caminho certo.</p>
+      </div>
+     
+   
+
+    </div>
+
+  </div>
+
+
+  <div class="main"></div>
+    <h1 class="titulo">
+      Serviços
+    </h1>
+
+    <div class="div-borda">
+
+      <div class="carousel">
+        <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <div class="carousel-items">
+
+          <div class="itens-box"><span>Consultoria Nutricional <br>Personalizada para
+              Emagrecimento </span> <img src="Imagens/img-02.jpeg" width="200px" alt="">
+            <br><br>
+            <p>
+              <span>
+                Foco em planos alimentares personalizados para perda de peso, que podem incluir
+                acompanhamento contínuo, avaliação de composição corporal e ajustes semanais.
+              </span> 
+
+            </p>
+          </div>
+
+          <div class="itens-box"><span>Nutrição Esportiva de Alta Performance </span> 
+            <img src="Imagens/img-02.jpeg" width="200px" alt="">
+            <br><br>
+            <p>
+              <span>
+                Planejamento nutricional voltado para atletas e praticantes de esportes que buscam
+                otimizar o desempenho, com estratégias de suplementação, hidratação e recuperação.
+              </span> 
+          </div>
+
+          <div class="itens-box"><span>Nutrição Funcional e Terapêutica </span>  <img
+              src="Imagens/img-02.jpeg" alt="">
+            <br><br>
+            <p>
+              <span>
+                Serviço que aborda a alimentação para tratar condições de saúde específicas, como
+                doenças autoimunes, intolerâncias alimentares ou distúrbios metabólicos, utilizando
+                alimentos funcionais.
+              </span>  <br>
+          </div>
+
+          <div class="itens-box"><span>Reeducação Alimentar</span> <img
+              src="Imagens/img-02.jpeg" alt="">
+            <br><br>
+            <p>
+              <span>
+                Programas completos e personalizados oferecidos de forma online, com planos
+                alimentares, acompanhamento remoto e suporte para mudança de hábitos alimentares a
+                longo prazo.
+              </span> <br> <br>
+          </div>
+        </div>
+        <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  </div>
+
+
+  <h1 class="title">
+    Nosso diferencial
+  </h1>
+
+  <div class="centro">
+    <p class="p">Experiência Prática Avançada <span class="span">Com estágios e trabalhos extras, já
+        desenvolveu habilidades práticas que vão além da sala de aula, permitindo uma abordagem mais
+        segura e confiante com os pacientes.</span></p>
+
+    <p class="p">Capacidade de Adaptação a Diferentes Áreas da Nutrição <span
+        class="span">Experiências variadas permitem atuar com diferentes perfis, desde nutrição
+        clínica até esportiva e funcional, tornando-a versátil e preparada para desafios
+        diversos.</span></p>
+    <p class="p">Atualização Constante em Tendências Nutricionais: <span class="span">Com
+        participação em eventos, workshops e cursos extras, está sempre por dentro das novas
+        tendências e pesquisas, aplicando o que há de mais moderno na nutrição.</span></p>
+    <p class="p">Habilidade de Comunicação e Empatia com Pacientes:<span class="span"> A vivência
+        com diferentes públicos a ensinou a ouvir, orientar e motivar de forma eficaz, criando
+        conexões que aumentam a adesão aos planos alimentares.</span></p>
+    <p class="p">Proatividade e Capacidade de Resolução de Problemas: <span class="span">Trabalhos
+        extras e estágios desenvolvem a habilidade de resolver problemas rapidamente, propondo
+        soluções nutricionais práticas e criativas.</span></p>
+    <p class="p">Foco em Resultados e Acompanhamento Personalizado: <span class="span">Comprometida
+        com o acompanhamento contínuo, utilizando métricas para avaliar progresso e ajustar planos
+        conforme necessário, garantindo resultados mais eficazes</span>.</p>
+
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function moveCarousel(direction) {
+      const carousel = document.querySelector('.carousel-items');
+      const itemWidth = document.querySelector('.itens-box').offsetWidth;
+      carousel.scrollBy({ left: itemWidth * direction, behavior: 'smooth' });
+    }
+
+    const title = document.querySelector('.title');
+    const text = 'Nosso diferencial';
+    let index = 0;
+
+    function type() {
+      if (index < text.length) {
+        title.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(type, 100); // Ajuste a velocidade da digitação
+      }
+    }
+
+    type();
+
+  </script>
+
+
+</body>
+
+</html>
