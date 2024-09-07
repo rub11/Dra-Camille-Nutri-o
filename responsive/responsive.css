@@ -1,0 +1,80 @@
+
+@media screen and (max-width:768px) {
+    .h1-nome {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .centro {
+        display: grid;
+        grid-template-columns: auto;
+        max-width: 80%;
+        margin: auto;
+        gap: 5px;
+    }
+
+    .duas-img {
+        margin: 10px auto;
+        display: flex;
+        background: url(Imagens/img-12.jpeg);
+        max-width: 80%;
+        padding: 10px;
+        border-radius: 2vh;
+        border: 1px solid rgba(128, 128, 128, 0.704);
+    }
+
+    .fundo {
+        margin: 10px auto;
+        display: flex;
+        background: url(Imagens/img-12.jpeg);
+        max-width: 80%;
+        padding: 10px;
+        border-radius: 2vh;
+        border: 1px solid rgba(128, 128, 128, 0.704);
+    }
+
+    .text-one {
+        background-color: white;
+        max-width: 80%;
+        margin: auto;
+        padding: 10px;
+        border-radius: 1vh;
+        border: 1px solid rgba(128, 128, 128, 0.507);
+    }
+
+
+
+    .carousel-button {
+        background: none;
+        border: none;
+        background: url(Imagens/img-05.jpeg);
+        border-radius: 50%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        margin-top: 250px;
+        border: 1px solid rgba(60, 59, 59, 0.304);
+        cursor: pointer;
+        padding: 10px;
+        color: white;
+        font-size: small;
+        border: 2px solid white;
+        margin-bottom: 2px;
+        margin:250px -18px;
+    }
+
+    .carousel-button:hover {
+        color: greenyellow;
+        transition: 0.8s;
+        border: 1px solid greenyellow;
+    }
+
+
+}
